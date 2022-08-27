@@ -1,0 +1,9 @@
+name: Actions
+on: [push]
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v2
+      -name: setup app
+       run: make setup
